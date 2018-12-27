@@ -43,7 +43,7 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class printer(
- Array[String] $package_name_wget  = $::printer::eparams::package_name_wget,
+ Array[String] $package_name_wget  = $::printer::params::package_name_wget,
  String $package_ensure            = $::printer::params::package_ensure,
 
 ) inherits ::printer::params {

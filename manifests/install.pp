@@ -1,5 +1,5 @@
 class printer::install(
-	Array[String] $package_name_local  = $::printer::package_name_local,
+	Array[String] $package_name_local  = $::printer::package_name_wget,
 	String $package_ensure             = $::printer::package_ensure,
 ){
 	$package_name_local.each | $index_local, $value_local | {
