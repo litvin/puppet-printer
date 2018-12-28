@@ -48,8 +48,8 @@ class printer(
 
 ) inherits ::printer::params {
 
-  include  printer::downloads
-  include  printer::install
+  class { '::printer::downloads': }
+  -> class{ '::printer::install': }
 
 }
 
